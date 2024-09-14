@@ -1,5 +1,5 @@
 {
-  "originHash" : "2ecdf9d081540d56a3d35c3ac234eabac50668e7cc364d29a44a05e51449bba1",
+  "originHash" : "1f81e80c57ab9265845e51fd84804e25f8b06a3e76e08e7dee38351a385512c5",
   "pins" : [
     {
       "identity" : "activityindicatorview",
@@ -29,15 +29,6 @@
       }
     },
     {
-      "identity" : "magnet",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/AugustDev/Magnet",
-      "state" : {
-        "branch" : "master",
-        "revision" : "4865f86d9baa24684dedacd6677beb2d8b30d88e"
-      }
-    },
-    {
       "identity" : "networkimage",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/gonzalezreal/NetworkImage",
@@ -53,15 +44,6 @@
       "state" : {
         "branch" : "main",
         "revision" : "0079411b4568dbc821c9e2589345d3f9b9538af4"
-      }
-    },
-    {
-      "identity" : "sauce",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/Clipy/Sauce",
-      "state" : {
-        "revision" : "df657bc1beba23ffd580953f183cd756b5bcd514",
-        "version" : "2.4.1"
       }
     },
     {

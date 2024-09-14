@@ -25,13 +25,6 @@ struct ApplicationEntry: View {
             }
         }
         .task {
-            
-            if let bundleIdentifier = Bundle.main.bundleIdentifier {
-                print("Bundle Identifier: \(bundleIdentifier)")
-            } else {
-                print("Bundle Identifier not found.")
-            }
-            
             Task.detached {
                 async let loadModels: () = languageModelStore.loadModels()
                 async let loadConversations: () = conversationStore.loadConversations()

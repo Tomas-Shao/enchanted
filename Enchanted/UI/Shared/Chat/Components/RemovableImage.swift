@@ -13,7 +13,7 @@ struct RemovableImage: View {
     var height: Double = 80
     
     var body: some View {
-        Button(action: {onClick() }) {
+        Button(action: { onClick() }) {
             ZStack(alignment: .topTrailing) {
                 image
                     .resizable()

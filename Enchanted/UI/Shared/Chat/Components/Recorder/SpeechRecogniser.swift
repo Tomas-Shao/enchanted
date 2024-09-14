@@ -83,7 +83,8 @@ actor SpeechRecognizer: ObservableObject {
         onUpdate = handler
     }
     
-    @MainActor func startTranscribing(onUpdate: @escaping (_ message: String) -> ()) {
+    @MainActor 
+    func startTranscribing(onUpdate: @escaping (_ message: String) -> ()) {
         Task {
             await self.setUpdateHandler(onUpdate)
             await transcribe()

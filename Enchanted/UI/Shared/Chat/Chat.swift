@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Chat: View, Sendable {
+struct Chat: View {
     @State private var languageModelStore: LanguageModelStore
     @State private var conversationStore: ConversationStore
     @State private var appStore: AppStore
@@ -27,7 +27,7 @@ struct Chat: View, Sendable {
             showMenu.toggle()
         }
         Task {
-            await Haptics.shared.mediumTap()
+            Haptics.shared.mediumTap()
         }
     }
     
@@ -71,7 +71,7 @@ struct Chat: View, Sendable {
     
     func onConversationDelete(_ conversation: ConversationSD) {
         Task {
-            await Haptics.shared.mediumTap()
+            Haptics.shared.mediumTap()
             try? await conversationStore.delete(conversation)
         }
     }

@@ -27,12 +27,15 @@ struct EmptyConversaitonView: View, KeyboardReadable {
             Spacer()
             
             VStack(spacing: 25) {
-                Text("Enchanted")
+                Text("EF Chatbot with AGI")
                     .font(Font.system(size: 46, weight: .thin))
                     .multilineTextAlignment(.center)
                     .foregroundStyle(
                         LinearGradient(
-                            colors: [Color(hex: "4285f4"), Color(hex: "9b72cb"), Color(hex: "d96570"), Color(hex: "#d96570")],
+                            colors: [Color(hex: "4285f4"), 
+                                     Color(hex: "9b72cb"),
+                                     Color(hex: "d96570"),
+                                     Color(hex: "d96570")],
                             startPoint: .leading,
                             endPoint: .trailing
                         )

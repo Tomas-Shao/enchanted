@@ -12,8 +12,10 @@ struct ConversationStatusView: View {
     var state: ConversationState
     var body: some View {
         switch state {
-        case .loading: EmptyView()
-        case .completed: EmptyView()
+        case .loading: 
+            EmptyView()
+        case .completed: 
+            EmptyView()
         case .error(let message): HStack {
             Text(message)
                 .foregroundColor(.red)

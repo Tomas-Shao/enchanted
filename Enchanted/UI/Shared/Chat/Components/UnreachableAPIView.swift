@@ -27,7 +27,7 @@ struct UnreachableAPIView: View {
                  .frame(width: 21, height: 21)
                  .padding(.horizontal)
             
-            Button(action: {showSettings.toggle()}) {
+            Button(action: { showSettings.toggle()}) {
                 Text("Settings")
                     .foregroundStyle(Color.white)
                     .fontWeight(.semibold)

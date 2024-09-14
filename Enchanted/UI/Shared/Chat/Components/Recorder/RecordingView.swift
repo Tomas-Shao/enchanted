@@ -9,10 +9,12 @@ import SwiftUI
 import AVFoundation
 
 struct RecordingView: View {
-    @StateObject var speechRecognizer: SpeechRecognizer = SpeechRecognizer()
+    @StateObject var speechRecognizer = SpeechRecognizer()
     @Binding var isRecording: Bool
-    var onComplete: (_ transcription: String) -> () = {_ in}
-    
+    var onComplete: (_ transcription: String) -> () = {_ in
+
+    }
+
     private func toggleRecord() {
         Task {
             await speechRecognizer.userInit()
@@ -67,6 +69,6 @@ struct RecordingView: View {
 
 struct MeetingView_Previews: PreviewProvider {
     static var previews: some View {
-        RecordingView(speechRecognizer: SpeechRecognizer(), isRecording: .constant(true))
+        RecordingView(speechRecognizer: SpeechRecognizer(), isRecording: .constant(false))
     }
 }
